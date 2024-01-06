@@ -20,9 +20,11 @@ st.title('Simple SpaCy')
 lingua = 'it_core_news_md' 
 
 #nlp = carica_lingua(lingua)
-spacy_stopwords = spacy.lang.it.stop_words.STOP_WORDS  # indagare qui
+
 
 nlp = spacy.load(lingua)
+spacy_stopwords = spacy.lang.it.stop_words.STOP_WORDS  # indagare qui
+
 
 testo = st.text_input('Inserisci il testo')
 if not testo:
